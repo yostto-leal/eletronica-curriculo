@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículo – Aryostto Leal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --azul-petroleo: #2c3e50;
+      --cinza-claro: #f4f4f4;
+      --cinza-escuro: #34495e;
+      --amarelo-suave: #f1c40f;
+      --laranja-tecnico: #e67e22;
+      --branco: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--cinza-claro);
+      color: var(--cinza-escuro);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.dark {
+      background-color: #1e1e1e;
+      color: #f4f4f4;
+    }
+
+    header {
+      background-color: var(--azul-petroleo);
+      color: var(--branco);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .contato {
+      margin-top: 10px;
+      font-size: 0.95em;
+    }
+
+    .contato i {
+      margin-right: 6px;
+    }
+
+    .contato a {
+      color: var(--amarelo-suave);
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .actions {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .actions button, .download-btn {
+      background-color: var(--azul-petroleo);
+      color: var(--branco);
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 0.95em;
+      transition: background 0.3s;
+    }
+
+    .actions button:hover, .download-btn:hover {
+      background-color: var(--laranja-tecnico);
+    }
+
+    section {
+      background-color: var(--branco);
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    body.dark section {
+      background-color: #2c2c2c;
+    }
+
+    h2 {
+      color: var(--azul-petroleo);
+      margin-top: 30px;
+    }
+
+    body.dark h2 {
+      color: var(--amarelo-suave);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .tag {
+      background-color: var(--amarelo-suave);
+      color: var(--azul-petroleo);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      margin-right: 5px;
+      display: inline-block;
+      margin-top: 5px;
+    }
+
+    body.dark .tag {
+      background-color: var(--laranja-tecnico);
+      color: var(--branco);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: var(--cinza-escuro);
+      color: var(--branco);
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        margin: 10px;
+        padding: 15px;
+      }
+
+      header h1 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Aryostto Leal</h1>
+  <p>Analista de Suporte Técnico | Automação Bancária | Infraestrutura</p>
+  <div class="contato">
+    <i class="fas fa-map-marker-alt"></i> Jaboatão dos Guararapes – PE
+    <i class="fas fa-envelope"></i> <span onclick="copyEmail()" style="cursor:pointer;">aryostto_leal@hotmail.com</span>
+    <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/ariosto-leal" target="_blank">LinkedIn</a>
+  </div>
+</header>
+
+<div class="actions">
+  <button onclick="copyEmail()"><i class="fas fa-copy"></i> Copiar E-mail</button>
+  <button onclick="toggleDarkMode()"><i class="fas fa-moon"></i> Modo Escuro</button>
+  <a href="Curriculo_Ariosto_Infra_2025.pdf" download class="download-btn"><i class="fas fa-file-download"></i> Baixar PDF</a>
+</div>
+
+<section>
+  <h2>Resumo Profissional</h2>
+  <p>Profissional com mais de 10 anos de experiência em suporte técnico N1/N2, manutenção de hardware, redes e automação bancária. Atuação em ambientes críticos com foco em disponibilidade, segurança e eficiência operacional.</p>
+
+  <h2>Competências Técnicas</h2>
+  <ul>
+    <li>Suporte técnico remoto e presencial (Windows/Linux)</li>
+    <li>Manutenção de ATMs, impressoras de cheques e periféricos bancários</li>
+    <li>Infraestrutura de redes: cabeamento, switches, roteadores</li>
+    <li>Controle de inventário e ativos de TI</li>
+    <li>Documentação técnica e gestão de chamados</li>
+    <li>Conhecimentos em Bash, PowerShell, Python</li>
+    <li>Segurança eletrônica e sistemas de CFTV</li>
+  </ul>
+
+  <h2>Experiência Profissional</h2>
+  <p><strong>Perto S.A.</strong> – Especialista em Suporte Remoto (2021–2024)</p>
+  <p>Instalação e manutenção de ATMs, suporte técnico remoto, automação bancária.</p>
+
+  <p><strong>Randstad Brasil</strong> – Técnico em Campo (2017–2018)</p>
+  <p>Manutenção de equipamentos NCR em instituições financeiras.</p>
+
+  <p><strong>TECBAN</strong> – Técnico Eletrônico (2014–2015)</p>
+  <p>Manutenção de cash dispensers e sistemas de segurança bancária.</p>
+
+  <p><strong>Diebold Brasil</strong> – Técnico de Suporte (1993–2013)</p>
+  <p>Instalação e manutenção de ATMs, suporte técnico em campo e remoto.</p>
+
+  <h2>Formação Acadêmica</h2>
+  <p>🎓 Ciência da Computação – Faculdade dos Guararapes (2012–2016)</p>
+  <p>🔧 Técnico em Eletrônica – IFPI (1985–1988)</p>
+
+  <h2>Certificações</h2>
+  <span class="tag">AWS Cloud Practitioner</span>
+  <span class="tag">AZ-900</span>
+  <span class="tag">React.js</span>
+  <span class="tag">Comunicação Interpessoal</span>
+
+  <h2>Publicações</h2>
+  <p>📘 “Análise Comparativa em Otimização de Banco de Dados Oracle”</p>
+</section>
+
+<footer>
+  <p>© 2025 Aryostto Leal • Currículo Online</p>
+</footer>
+
+<script>
+  function copyEmail() {
+    navigator.clipboard.writeText("aryostto_leal@hotmail.com");
+    alert("E-mail copiado!");
+  }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+  }
+</script>
+
+</body>
+</html>
